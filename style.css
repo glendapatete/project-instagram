@@ -1,0 +1,303 @@
+body {
+  background-color: #e9e9e9;
+}
+
+.container {
+  background-color: #000000;
+  color: #fff;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 600;
+  width: 394px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid #444;
+  border-radius: 10px;
+}
+
+.padding-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+div.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-phone {
+  display: flex;
+}
+
+.icons-phone i {
+  margin-right: 5px;
+}
+
+.icons-phone i:last-child {
+  margin-right: 0px;
+}
+
+.user-name {
+  padding: 10px;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile-img .avatar {
+  background-size: 100% auto;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.profile-img {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.profile-img i {
+  cursor: pointer;
+  color: #00000;
+  position: absolute;
+  bottom: 1px;
+  right: 0px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: #309cff;
+}
+
+.profile-img span {
+  cursor: pointer;
+}
+input[type="file"] {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: #000000;
+  cursor: inherit;
+  display: block;
+}
+
+.followers,
+.following,
+.posting {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thing {
+  font-weight: 0;
+}
+
+.profile-data {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 12%;
+  margin-right: 8%;
+}
+
+.profile-data span:last-child {
+  font-size: 12px;
+}
+
+.description-text span {
+  font-weight: 100;
+}
+
+.name {
+  padding-top: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  min-width: 100%;
+  background: transparent;
+  border-radius: 4px;
+  border: 1.5px solid #1a1a1a;
+  padding: 8px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.content-top {
+  margin-top: 15px;
+  border-top: 2px solid #1a1a1a;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+.content-top ul li {
+  text-align: center;
+}
+
+.content-top ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.content-top ul li label {
+  width: 100%;
+}
+
+.container .radio {
+  display: none;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.tab > label {
+  display: block;
+  margin-bottom: -1px;
+  width: 50%;
+  color: #b4b4b4;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tab:hover label {
+  color: #dbdbdb;
+}
+
+.tab > label svg {
+  fill: #b4b4b4;
+}
+
+.tab:hover label svg {
+  fill: #dbdbdb;
+}
+
+.tab-content {
+  display: none;
+}
+
+#tab1:checked ~ .tabs .tab #tabsLabel1,
+#tab2:checked ~ .tabs .tab #tabsLabel2 {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+#tab2:checked ~ .tabs .tab #tabsLabel2 svg {
+  fill: #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+  display: block;
+}
+
+.content-pic {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.content-pic div {
+  width: 126px;
+  height: 126px;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.content-pic div img {
+  flex: 1;
+  height: 100%;
+}
+
+a {
+  color: #fff;
+}
+
+footer {
+  position: relative;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #fe5723;
+  font-size: 16px;
+  line-height: 1.3em;
+  margin: 10px auto;
+  padding: 7px;
+  position: absolute;
+  text-align: center;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  right: -17px;
+  bottom: 19px;
+}
+
+.bubble i {
+  margin-right: 2px;
+}
+
+.bubble-arrow {
+  border-color: #fe5723 transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -14px;
+  left: 30%;
+}
+
+.active {
+  position: relative;
+}
+
+.active::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 5px;
+  background-color: #fe5723;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: -6px;
+  right: 7px;
+}
+
+.margin-4 {
+  margin: 0px 4px 4px 4px;
+}
+
+.margin-2 {
+  margin: 0px 0px 0px 4px;
+}
